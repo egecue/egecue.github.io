@@ -1,0 +1,28 @@
+<!doctype html>
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<head>
+    <title>404</title>
+</head>
+
+<div id="content">
+    <div class="view">
+        <h3>404 | not found</h3>
+        <p>the resource you've requested had to be moved or possibly never existed at all.</p>
+        <br/>
+        <p>please wait a bit to be automatically redirected one level higher…</p>
+        <br/>
+        <p>(or click <a href="../">here</a> if you don't like waiting)</p>
+
+        <script>
+            setTimeout(function () {
+                window.location = window
+                    .location
+                    .toString()
+                    .replace(/\/+$/, '') + '/..'
+            }, 5555)
+        </script>
+    </div>
+</div>
